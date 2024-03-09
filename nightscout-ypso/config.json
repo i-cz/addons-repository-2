@@ -1,7 +1,7 @@
 {
   "name": "Nightscout Ypso",
   "version": "15.0.2-2",
-  "slug": "nightscout",
+  "slug": "nightscout_ypso",
   "description": "Nightscout acts as a web-based CGM (Continuous Glucose Montinor) to allow multiple caregivers to remotely view a patients glucose data in realtime.",
   "url": "https://github.com/i-cz/addon-nightscout",
   "arch": [
@@ -14,10 +14,10 @@
   "image": "ihlcz/image-{arch}-addon-nightscout",
   "hassio_role": "default",
   "ports": {
-    "5423/tcp": 5424
+    "5423/tcp": 5425
   },
   "ports_description": {
-    "5424/tcp": "Nightscout frontend"
+    "5425/tcp": "Nightscout frontend"
   },
   "map": [
     "ssl",
