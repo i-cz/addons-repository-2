@@ -4,7 +4,7 @@
 
 This repository exists mainly because I needed to upgrade [Marcio's NightScout addon](https://github.com/marciogranzotto/addon-nightscout) for Home Assistant and I wanted to have multiple instances.
 
-This servers solely for my personal usage so if you would like to reuse I recommend to fork or copy&paste the code because there will be unannounced updates or breaking changes.
+This serves solely for my personal usage so if you would like to reuse I recommend to fork or copy&paste the code because there will be unannounced updates or breaking changes.
 
 ## Installation
 The installation of this add-on is pretty straightforward and not different in comparison to installing any other Home Assistant add-on.
