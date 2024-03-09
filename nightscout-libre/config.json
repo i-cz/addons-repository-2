@@ -1,5 +1,5 @@
 {
-  "name": "Nightscout Ypso",
+  "name": "Nightscout Libre",
   "version": "15.0.2-2",
   "slug": "nightscout",
   "description": "Nightscout acts as a web-based CGM (Continuous Glucose Montinor) to allow multiple caregivers to remotely view a patients glucose data in realtime.",
