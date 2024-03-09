@@ -1,6 +1,6 @@
 {
   "name": "Nightscout Libre",
-  "version": "15.0.2-2",
+  "version": "15.0.2-3",
   "slug": "nightscout_libre",
   "description": "Nightscout acts as a web-based CGM (Continuous Glucose Montinor) to allow multiple caregivers to remotely view a patients glucose data in realtime.",
   "url": "https://github.com/i-cz/addon-nightscout",
@@ -25,7 +25,7 @@
   ],
   "options": {
     "log_level": "info",
-    "ssl": false,
+    "ssl": true,
     "certfile": "fullchain.pem",
     "keyfile": "privkey.pem",
     "api_key": "",
@@ -40,6 +40,9 @@
     "connect_link_up_region": "EU",
     "connect_glooko_email": "",
     "connect_glooko_password": "",
+    "connect_glooko_env": "eu",
+    "connect_glooko_server": "eu.api.glooko.com",
+    "connect_glooko_timezone_offset": "1",
     "plugins": [
       "careportal",
       "boluscalc",
@@ -73,6 +76,9 @@
     "connect_link_up_region": "str",
     "connect_glooko_email": "str",
     "connect_glooko_password": "str",
+    "connect_glooko_env": "str",
+    "connect_glooko_server": "str",
+    "connect_glooko_timezone_offset": "str",
     "auth_default_roles": "list(admin|denied|status-only|readable|careportal|devicestatus-upload|activity)?",
     "theme": "list(default|colors|colorblindfriendly)",
     "import_config_url": "str?",
