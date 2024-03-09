@@ -1,0 +1,83 @@
+{
+  "name": "Nightscout Ypso",
+  "version": "15.0.2-2",
+  "slug": "nightscout",
+  "description": "Nightscout acts as a web-based CGM (Continuous Glucose Montinor) to allow multiple caregivers to remotely view a patients glucose data in realtime.",
+  "url": "https://github.com/i-cz/addon-nightscout",
+  "arch": [
+    "aarch64"
+  ],
+  "webui": "[PROTO:ssl]://[HOST]:[PORT:5424]",
+  "startup": "services",
+  "init": "false",
+  "boot": "auto",
+  "image": "ihlcz/image-{arch}-addon-nightscout",
+  "hassio_role": "default",
+  "ports": {
+    "5423/tcp": 5424
+  },
+  "ports_description": {
+    "5424/tcp": "Nightscout frontend"
+  },
+  "map": [
+    "ssl",
+    "config:rw"
+  ],
+  "options": {
+    "log_level": "info",
+    "ssl": true,
+    "certfile": "fullchain.pem",
+    "keyfile": "privkey.pem",
+    "api_key": "",
+    "mongodb_uri": "mongodb://127.0.0.1:27017/admin",
+    "auth_default_roles": "readable",
+    "theme": "colors",
+    "import_config_url": "",
+    "connect_source": "glooko",
+    "connect_link_up_username": "",
+    "connect_link_up_password": "",
+    "connect_link_up_server": "",
+    "connect_link_up_region": "",
+    "connect_glooko_email": "",
+    "connect_glooko_password: "",
+    "plugins": [
+      "careportal",
+      "boluscalc",
+      "food",
+      "bwp",
+      "cage",
+      "sage",
+      "iage",
+      "iob",
+      "cob",
+      "basal",
+      "ar2",
+      "rawbg",
+      "pushover",
+      "bgi",
+      "pump",
+      "openaps"
+    ]
+  },
+  "schema": {
+    "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
+    "ssl": "bool",
+    "certfile": "str",
+    "keyfile": "str",
+    "api_key": "str",
+    "mongodb_uri": "str",
+    "connect_source": "str",
+    "connect_link_up_username": "str",
+    "connect_link_up_password": "str",
+    "connect_link_up_server": "str",
+    "connect_link_up_region": "str",
+    "connect_glooko_email": "str",
+    "connect_glooko_password": "str",
+    "auth_default_roles": "list(admin|denied|status-only|readable|careportal|devicestatus-upload|activity)?",
+    "theme": "list(default|colors|colorblindfriendly)",
+    "import_config_url": "str?",
+    "plugins": [
+      "str"
+    ]
+  }
+}
