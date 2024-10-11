@@ -14,10 +14,10 @@
   "image": "ihlcz/image-{arch}-addon-nightscout",
   "hassio_role": "default",
   "ports": {
-    "5423/tcp": 5424
+    "5423/tcp": 5427
   },
   "ports_description": {
-    "5424/tcp": "Nightscout frontend"
+    "5427/tcp": "Nightscout frontend"
   },
   "map": [
     "ssl",
