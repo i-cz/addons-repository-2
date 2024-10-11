@@ -1,7 +1,7 @@
 {
   "name": "Nightscout Libre Ivos",
   "version": "15.0.2-3",
-  "slug": "nightscout_libre",
+  "slug": "nightscout_libre_ivos",
   "description": "Nightscout acts as a web-based CGM (Continuous Glucose Montinor) to allow multiple caregivers to remotely view a patients glucose data in realtime.",
   "url": "https://github.com/i-cz/addon-nightscout",
   "arch": [
